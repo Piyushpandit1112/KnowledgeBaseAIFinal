@@ -2,3 +2,10 @@ streamlit
 openai
 langchain
 langchain-community
+pinecone-client
+langchain-pinecone
+langchain-openai 
+unstructured
+python-docx
+python-pptx
+openpyxl
