@@ -7,7 +7,7 @@ with st.sidebar:
     st.write("")  # Add some space at the top
     st.markdown("**History**")
 
-client = OpenAI(api_key=os.environ.get('OPENAI_API_KEY'))
+client = OpenAI(api_key=secrets.OPENAI_API_KEY)
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
