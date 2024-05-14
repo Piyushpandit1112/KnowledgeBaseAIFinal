@@ -7,7 +7,7 @@ with st.sidebar:
     st.write("")  # Add some space at the top
     st.markdown("**History**")
 
-api_key=st.secrets["OPENAI_API_KEY"]
+api_key=st.secrets["auth_token"]
 
 client = OpenAI(api_key=api_key)
 
