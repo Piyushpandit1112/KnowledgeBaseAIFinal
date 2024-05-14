@@ -24,7 +24,7 @@ from langchain_core.messages import HumanMessage, AIMessage
 # Create a function to store loaded filenames in a text file
 # Store the loaded filenames in the text file
 
-api_key=st.secrets["auth_key"]
+api_key="sk-proj-vVXBtOPKgyAAIwxbdUQOT3BlbkFJrfe0euXauTSmukqhmbb3"
 
 import os
 
