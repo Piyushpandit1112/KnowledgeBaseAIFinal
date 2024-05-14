@@ -24,11 +24,9 @@ from langchain_core.messages import HumanMessage, AIMessage
 # Create a function to store loaded filenames in a text file
 # Store the loaded filenames in the text file
 
-
+api_key=st.secrets["OPENAI_API_KEY"]
 
 import os
-
-OPENAI_API_KEY=secrets.OPENAI_API_KEY
 
 def get_all_filenames(folder_path):
     filenames = []
@@ -67,7 +65,7 @@ exclude_filenames = get_filenames_from_file(exclude_file)
 
 
 
-llm = ChatOpenAI(model="gpt-3.5-turbo-0125", api_key=OPENAI_API_KEY, temperature=0.3)
+llm = ChatOpenAI(model="gpt-3.5-turbo-0125", api_key=api_key, temperature=0.3)
 
 
 
@@ -102,7 +100,7 @@ print(len(documents))
 
 #Embeddings and storing it in vector store
 
-embeddings = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
+embeddings = OpenAIEmbeddings(api_key=api_key)
 
 # Using pinecone for storing vectors
 
