@@ -1,0 +1,41 @@
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Bluetriton\VSU_Functionality.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Analytics Installation Guide-updated.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Azure SQL Server Backup Arch.gif
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Azure VM Backup Arch.gif
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Bijlage 4 Programma van Eisen MZH 7210 PPM tooling.xlsx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Blurtriton_NestleInfratructure.png
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Certificate Expire-VPN.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Delegate access to domain only.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Deployment of SAAS application.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Document For SQL Always On Group.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\DRTestReport_II_SPM_23.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Email Notification on SQL job Succeeds or Failure.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\FOR RFI Purposes SPM.zip
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\How to install ssl-projectObjects.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\ITMOSEC_Version2_1May24.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Kinsta DNS.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Monitoring server-Guide_22Aug22.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Nestle Environment Details.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Nestle Infra & Recovery struc..docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\NestleInfra_Diagram_Latest.png
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\NIMT Progress Report Jan24.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Outlook-Import Export.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\PipelineAutomation_21112022.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\PO10 Installation Guide.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Projext & Portfolio Mgmnt Appendix 1- Questionnaire RFI - FINAL.xlsx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Security ARCH.gif
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\sella evaluation 1.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Sella_With Comments.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\SPM Analytics Technical Spec.pptx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\SPM Installation Guide.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\SPM System Status & Availability Report_Mar24.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\SPM-P-Arch.zip
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\SPM_AZURE AD SSO 2.0_256.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\SPM_SSO-Final.gif
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\SSL Guide for Livetrial or Live server.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\SSO_ARCH.gif
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Sync workspace emails with outlook.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\System Status & Availability Report-Apr24.docx
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Uppwise Technology Stack.pdf
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\VMBackupArchFLOW.gif
+C:\Users\UppwiseLap\Documents\GenAIProject\KnowledgeBaseAI\Uppwise_Application_Doc\Infrastructurenetworksecurity\Whitepaper_UppwiseMoSec Solution.docx

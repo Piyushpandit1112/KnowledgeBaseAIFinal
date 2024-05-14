@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://developer.riskmethods.net/v1/manufacture -->
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <link rel="stylesheet" href="./Sphera SCRM API Documentation_files/api-66e223c73d07e902c68e1033f3d2df98eebaa7f890e62c4019236bfeb3a00d60.css">
+
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="9TyaqcWWDLVlb2YCHOsbMdsJVwn6AqmmGIYY9UITfxqERoBJIlRhVwgLWAQkPm2r5wkeutJ8uusJCBcA3Z6OIw">
+
+    <link rel="icon" type="image/x-icon" href="https://cdn.riskmethods.net/core/assets/favicon-0d63cfbd89ce2ae0b82b01e8351485865b6ba46b499ac40a61ec0a7d3eb166ca.ico">
+  <style>				.askemmy {					background: #fff url(chrome-extension://gllmlkidgbagkcikijiljllpdloelocn/logo_housefly_new.png) no-repeat right 5px bottom 5px;					background-size: 45px;				}				.askemmy {				    z-index: 10000;				    position: fixed;				    display: block;				    width: 350px;				    height: 145px;				    background-color: white;				    border-radius: 2px;				    box-shadow: rgb(133, 133, 133) 0px 0px 25px 1px;				    margin: 0 auto;				    text-align: center;				    margin-left: 35%;				    margin-top: 10%;				}				.askemmy p#msg {				    font-size: 1.1em;				    font-weight: 600;				    margin-top: 31px;				    margin-bottom: 20px;				}				.askemmy .error-msg {					color: #FF5600;					padding-top: 10px;				}				.askemmy .success-msg {					color: green;					padding-top: 10px;				}				.askemmy input {				    padding: .5em .6em;				    display: inline-block;				    border: 1px solid #ccc;				    box-shadow: inset 0 1px 3px #ddd;				    border-radius: 4px;				    vertical-align: middle;				    -webkit-box-sizing: border-box;				    box-sizing: border-box;				    line-height: normal;				    -webkit-appearance: textfield;				    cursor: auto;				 }				 .askemmy input[type="submit"] {				    font-family: inherit;				    font-size: 100%;				    padding: .5em 1em;				    color: white;				    font-weight: 600;				    border: 1px solid #999;				    border: 0 rgba(0,0,0,0);				    background-color: rgba(31, 196, 255, .8);				    text-decoration: none;				    border-radius: 2px;				    display: inline-block;				    zoom: 1;				    line-height: normal;				    white-space: nowrap;				    vertical-align: middle;				    text-align: center;				    cursor: pointer;				    -webkit-user-drag: none;				    -webkit-user-select: none;				    user-select: none;				    -webkit-box-sizing: border-box;				    box-sizing: border-box;				 }				.askemmy .closebox {				    display: inline-block;				    height: 16px;				    width: 16px;				    position: absolute;				    right: 4px;				    top: 4px;				    cursor: pointer;				    background: url(chrome-extension://gllmlkidgbagkcikijiljllpdloelocn/close_box.png)				}				.pop-up-report {					background: #fff url(chrome-extension://gllmlkidgbagkcikijiljllpdloelocn/logo_housefly_new.png) no-repeat right 5px bottom 5px;					background-size: 45px;				}				.pop-up-report {				    z-index: 10000;				    position: fixed;				    display: block;				    width: 400px;				    height: 200px;				    background-color: white;				    border-radius: 2px;				    box-shadow: rgb(133, 133, 133) 0px 0px 25px 1px;				    margin: 0 auto;				    text-align: left;				    margin-left: 35%;				    margin-top: 10%;				    padding-left:10px;				    padding-bottom:10px;				    padding-top:10px;				    font-family: Arial,sans-serif;				    font-size:13px;				}				.pop-up-report textarea {					width:380px;					height:75px;				    padding: .5em .6em;				    display: inline-block;				    border: 1px solid #ccc;				    box-shadow: inset 0 1px 3px #ddd;				    border-radius: 4px;				    vertical-align: middle;				    -webkit-box-sizing: border-box;				    box-sizing: border-box;				    line-height: normal;				    -webkit-appearance: textarea;				    cursor: auto;				 }				 .pop-up-report input[type="button"] {				    font-family: Arial,sans-serif;				    font-size: 100%;				    padding: .5em 1em;				    color: white;				    font-weight: 600;				    border: 1px solid #999;				    border: 0 rgba(0,0,0,0);				    background-color: rgba(31, 196, 255, .8);				    text-decoration: none;				    border-radius: 2px;				    display: inline-block;				    zoom: 1;				    line-height: normal;				    white-space: nowrap;				    vertical-align: middle;				    text-align: center;				    cursor: pointer;				    -webkit-user-drag: none;				    -webkit-user-select: none;				    user-select: none;				    -webkit-box-sizing: border-box;				    box-sizing: border-box;				    margin-top:5px;				 }				 .pop-up-report select {				 	background-color:rgb(221,221,221);				 	border: 1px solid #DDD;    				border-radius: 4px 4px 4px 4px;    				height:25px;    				width:380px;    				padding: 3px;				 }				 .pop-up-report select {				 	align: center;				 	text-align: center;				 } 				.alert_message_mc {					background: #fff url(chrome-extension://gllmlkidgbagkcikijiljllpdloelocn/logo_housefly_new.png) no-repeat right 5px bottom 5px;					background-size: 45px;				}				.alert_message_mc {				    z-index: 10000;				    position: fixed;				    display: block;				    width: 350px;				    height: 145px;				    background-color: white;				    border-radius: 2px;				    box-shadow: rgb(133, 133, 133) 0px 0px 25px 1px;				    margin: 0 auto;				    text-align: center;				    margin-left: 35%;				    margin-top: 10%;				}				.alert_message_mc p#msg {				    padding-top:60px;				}				.alert_message_mc p{				     margin: auto;				}				.alert_message_mc .error-msg {					color: #FF5600;					padding-top: 10px;				}				.alert_message_mc .success-msg {					color: green;					padding-top: 10px;				}				.alert_message_mc input {				    padding: .5em .6em;				    display: inline-block;				    border: 1px solid #ccc;				    box-shadow: inset 0 1px 3px #ddd;				    border-radius: 4px;				    vertical-align: middle;				    -webkit-box-sizing: border-box;				    box-sizing: border-box;				    line-height: normal;				    -webkit-appearance: textfield;				    cursor: auto;				 }				 .alert_message_mc input[type="submit"] {				    font-family: inherit;				    font-size: 100%;				    padding: .5em 1em;				    color: white;				    font-weight: 600;				    border: 1px solid #999;				    border: 0 rgba(0,0,0,0);				    background-color: rgba(31, 196, 255, .8);				    text-decoration: none;				    border-radius: 2px;				    display: inline-block;				    zoom: 1;				    line-height: normal;				    white-space: nowrap;				    vertical-align: middle;				    text-align: center;				    cursor: pointer;				    -webkit-user-drag: none;				    -webkit-user-select: none;				    user-select: none;				    -webkit-box-sizing: border-box;				    box-sizing: border-box;				 }				.alert_message_mc .closebox {				    display: inline-block;				    height: 16px;				    width: 16px;				    position: absolute;				    right: 4px;				    top: 4px;				    cursor: pointer;				    background: url(chrome-extension://gllmlkidgbagkcikijiljllpdloelocn/close_box.png)				}				</style>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Guest Contributor</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">269800.000000000</mso:Order>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Guest Contributor</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:TriggerFlowInfo msdt:dt="string"></mso:TriggerFlowInfo>
+<mso:ContentTypeId msdt:dt="string">0x010100BEEB59A12AD0B046962264E1B1648D08</mso:ContentTypeId>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+  <body class="userarea" style="">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="span10">
+            <a href="https://developer.riskmethods.net/v1/manufacture">
+              <img class="logo" src="./Sphera SCRM API Documentation_files/logo-0e9c2bcc1826852072a150482c6dba38cfa9838676ed854a52ca53984b4bf04c.png">
+</a>            <span class="title">
+              <abbr title="Awesome Programming Interface">API</abbr> Documentation
+            </span>
+          </div>
+          <div class="status span2">
+              <div class="alert alert-success">API Status: <i class="fa fa-fw fa-check"></i></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <nav class="span3" id="sidebar">
+          <ul class="nav nav-tabs nav-stacked">
+<li><a href="https://developer.riskmethods.net/v1/introduction">Introduction</a></li><li><a href="https://developer.riskmethods.net/v1/security">Security</a></li><li><a href="https://developer.riskmethods.net/v1/authentication">Authentication</a></li><li><a href="https://developer.riskmethods.net/v1/response_codes">Response Codes</a></li><li><a href="https://developer.riskmethods.net/v1/data_types">Data Types</a></li><li><a href="https://developer.riskmethods.net/v1/pagination">Pagination</a></li><li><a href="https://developer.riskmethods.net/v1/api_request_rate_limits">API Request Rate Limits</a></li><li><a href="https://developer.riskmethods.net/v1/risk_scores">Risk Scores</a></li><li><a href="https://developer.riskmethods.net/v1/http_verbs">HTTP Verbs</a></li>          </ul>
+          <ul class="nav nav-tabs nav-stacked">
+<li><a href="https://developer.riskmethods.net/v1/business_unit">Business Unit</a></li><li><a href="https://developer.riskmethods.net/v1/country">Country</a></li><li><a href="https://developer.riskmethods.net/v1/debtor">Debtor</a></li><li><a href="https://developer.riskmethods.net/v1/indicator">Indicator</a></li><li><a href="https://developer.riskmethods.net/v1/indicator_message">Indicator Message</a></li><li><a href="https://developer.riskmethods.net/v1/location">Location</a></li><li class="active"><a aria-current="page" href="https://developer.riskmethods.net/v1/manufacture">Manufacture</a></li><li><a href="https://developer.riskmethods.net/v1/manufacture#index">&nbsp;&nbsp;List manufactures</a></li><li><a href="https://developer.riskmethods.net/v1/manufacture#show">&nbsp;&nbsp;List a manufacture</a></li><li><a href="https://developer.riskmethods.net/v1/manufacture#create">&nbsp;&nbsp;Create a manufacture</a></li><li><a href="https://developer.riskmethods.net/v1/manufacture#update">&nbsp;&nbsp;Update a manufacture</a></li><li><a href="https://developer.riskmethods.net/v1/manufacture#destroy">&nbsp;&nbsp;Delete a manufacture</a></li><li><a href="https://developer.riskmethods.net/v1/material_group">Material Group</a></li><li><a href="https://developer.riskmethods.net/v1/risk_object">Risk Object</a></li><li><a href="https://developer.riskmethods.net/v1/supplier">Supplier</a></li><li><a href="https://developer.riskmethods.net/v1/supply_path">Supply Path</a></li><li><a href="https://developer.riskmethods.net/v1/token">Token</a></li><li><a href="https://developer.riskmethods.net/v1/user">User</a></li>          </ul>
+        </nav>
+        <div class="span9 offset3" id="content" style="min-height: 1039px;">
+          <h1>Manufacture</h1>
+
+<p>
+  The API offers the ability to list, create, edit and delete manufacture.
+</p>
+
+<section id="index">
+  <h2>
+    List manufactures - GET /v1/manufactures
+  </h2>
+
+  <p>Listing the manufactures returns, depending on the parameters provided, a list of manufactures including business information, address information and risk information.</p>
+
+  <p>
+    The request additionally supports the
+    <a href="https://developer.riskmethods.net/v1/pagination">pagination parameters</a> for index listings.
+  </p>
+
+  <h3>Response</h3>
+
+  <p>
+    The response is an array of <a href="https://developer.riskmethods.net/v1/manufacture#show">manufacture</a> objects. It additionally includes the
+    <a href="https://developer.riskmethods.net/v1/pagination">pagination parameters</a> for index listings.
+  </p>
+
+  <table class="table table-striped">
+    <tbody><tr>
+      <th>Attribute</th>
+      <th>Format</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><code>manufactures</code></td>
+      <td><code>Array</code></td>
+      <td>
+        Array of all requested manufactures. See <a href="https://developer.riskmethods.net/v1/manufacture#show">list a manufacture</a> for content details.<br>
+        <strong>NOTE:</strong> One manufacture in the array does not have the <code>manufacture</code> namespace as stated in the 'list a manufacture' response.
+      </td>
+    </tr>
+  </tbody></table>
+
+  <h3>Examples</h3>
+
+  <p>Return all manufactures available in a paginated manner.</p>
+
+  <div class="well">
+  <a class="pull-right btn btn-link execute" data-token="75e4202482bc7249995324bd6bc1234e" href="https://api-de1.riskmethods.net/v1/manufactures.json">
+    Execute
+  </a>
+  <div class="code request">
+    GET /v1/manufactures.json
+
+  </div>
+  <div class="code response">
+    <!-- render response dynamically -->
+  </div>
+</div>
+
+</section>
+
+<section id="show">
+  <h2>
+    List a manufacture - GET /v1/manufactures/:id
+  </h2>
+
+  <p>Returns one single manufacture based on the provided id.</p>
+
+  <h3>Response</h3>
+
+  <table class="table table-striped">
+    <tbody><tr>
+      <th>Attribute</th>
+      <th>Format</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <th colspan="3">The following objects live in the <code>manufacture</code> namespace.</th>
+    </tr>
+    <tr>
+      <td><code>id</code></td>
+      <td><code>Number</code></td>
+      <td>The internal manufacture id.</td>
+    </tr>
+    <tr>
+      <td><code>name</code></td>
+      <td><code>String</code></td>
+      <td>The manufacture name.</td>
+    </tr>
+    <tr>
+      <td><code>business_unit_ids</code></td>
+      <td><code>Array</code></td>
+      <td>An array of all assigned <a href="https://developer.riskmethods.net/v1/business_unit">business unit ids</a>.</td>
+    </tr>
+    <tr>
+      <td><code>material_group_ids</code></td>
+      <td><code>Array</code></td>
+      <td>An array of all assigned <a href="https://developer.riskmethods.net/v1/material_group">material group ids</a>.</td>
+    </tr>
+    <tr>
+      <td><code>responsible_user_ids</code></td>
+      <td><code>Array</code></td>
+      <td>An array of all assigned <a href="https://developer.riskmethods.net/v1/user">responsible user ids</a>.</td>
+    </tr>
+    <tr>
+  <th colspan="3">The following objects live in the <code>manufacture.address</code> namespace.</th>
+</tr>
+<tr>
+  <td><code>address1</code></td>
+  <td><code>String</code></td>
+  <td>The street including house number.</td>
+</tr>
+<tr>
+  <td><code>address2</code></td>
+  <td><code>String</code></td>
+  <td>Additional information on the address.</td>
+</tr>
+<tr>
+  <td><code>zip_code</code></td>
+  <td><code>String</code></td>
+  <td>The city's zip code.</td>
+</tr>
+<tr>
+  <td><code>city</code></td>
+  <td><code>String</code></td>
+  <td>The city name.</td>
+</tr>
+<tr>
+  <td><code>state</code></td>
+  <td><code>String</code></td>
+  <td>The state name.</td>
+</tr>
+<tr>
+  <td><code>country_code</code></td>
+  <td><code>String</code></td>
+  <td>
+    The country's code in
+    <a target="_blank" rel="noopener noreferrer" href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha 2 format</a>.
+  </td>
+</tr>
+<tr>
+  <td><code>latitude</code></td>
+  <td><code>Number</code></td>
+  <td>
+    Geographic latitude coordinate in the
+    <a target="_blank" rel="noopener noreferrer" href="http://en.wikipedia.org/wiki/Decimal_degrees">signed degrees format</a>.
+  </td>
+</tr>
+<tr>
+  <td><code>longitude</code></td>
+  <td><code>Number</code></td>
+  <td>Geographic longitude coordinate in the signed degrees format.</td>
+</tr>
+
+    <tr>
+  <th colspan="3">
+    The following objects live in the <code>manufacture.score_card</code> namespace.<br>
+    If <code>manufacture.score_card</code> is <code>null</code>, it means that this manufacture is currently not being
+    monitored.<br>
+    The score card displayed depends on the configured
+    <a href="https://de1.riskmethods.net/customer_score_card">master score card</a>.
+  </th>
+</tr>
+<tr>
+  <td><code>risk_score</code></td>
+  <td><code>Number</code></td>
+  <td>
+    The <a href="https://developer.riskmethods.net/v1/risk_scores">risk score</a> on a scale from <code>0</code> to
+    <code>100</code>. <code>null</code> indicates non-availablity.
+  </td>
+</tr>
+<tr>
+  <td><code>risk_groups</code></td>
+  <td><code>Array</code></td>
+  <td>An array of all risk_groups inside this score_card.</td>
+</tr>
+<tr>
+  <th colspan="3">The following objects are one element in the <code>manufacture.score_card.risk_groups</code> namespace.</th>
+</tr>
+<tr>
+  <td><code>name</code></td>
+  <td><code>String</code></td>
+  <td>The risk group name.</td>
+</tr>
+<tr>
+  <td><code>risk_score</code></td>
+  <td><code>Number</code></td>
+  <td>
+    The risk group's risk score on a scale from <code>0</code> to <code>100</code>.
+    <code>null</code> indicates non-availablity.
+  </td>
+</tr>
+<tr>
+  <td><code>risks</code></td>
+  <td><code>Array</code></td>
+  <td>An array of all risks inside one risk_group.</td>
+</tr>
+<tr>
+  <th colspan="3">The following objects are one element in the <code>manufacture.score_card.risk_groups.risks</code> namespace.</th>
+</tr>
+<tr>
+  <td><code>name</code></td>
+  <td><code>String</code></td>
+  <td>The risk name.</td>
+</tr>
+<tr>
+  <td><code>risk_score</code></td>
+  <td><code>Number</code></td>
+  <td>
+    The risk's risk score on a scale from <code>0</code> to <code>100</code>.
+    <code>null</code> indicates non-availablity.
+  </td>
+</tr>
+<tr>
+  <td><code>indicators</code></td>
+  <td><code>Array</code></td>
+  <td>An array of all indicators inside one risk.</td>
+</tr>
+<tr>
+  <th colspan="3">The following objects are one element in the <code>manufacture.score_card.risk_groups.risks.indicators</code> namespace.</th>
+</tr>
+<tr>
+  <td><code>name</code></td>
+  <td><code>String</code></td>
+  <td>The indicator name.</td>
+</tr>
+<tr>
+  <td><code>risk_score</code></td>
+  <td><code>Number</code></td>
+  <td>
+    The indicator's risk score on a scale from <code>0</code> to <code>100</code>.
+    <code>null</code> indicates non-availablity.
+  </td>
+</tr>
+
+  </tbody></table>
+
+  <h3>Example</h3>
+
+  <p>Return the manufactures with id <code>322038</code>.</p>
+
+  <div class="well">
+  <a class="pull-right btn btn-link execute" data-token="75e4202482bc7249995324bd6bc1234e" href="https://api-de1.riskmethods.net/v1/manufactures/322038.json">
+    Execute
+  </a>
+  <div class="code request">
+    GET /v1/manufactures/322038.json
+
+  </div>
+  <div class="code response">
+    <!-- render response dynamically -->
+  </div>
+</div>
+
+</section>
+
+<section id="create">
+  <h2>
+    Create a manufacture - POST /v1/manufactures
+  </h2>
+
+  <p>
+    Creates a manufacture with the given attributes.
+  </p>
+
+  <table class="table table-striped">
+    <tbody><tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Format</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <th colspan="4">The following data needs to be inside the <code>manufacture</code> namespace.</th>
+    </tr>
+    <tr>
+      <td><code>name</code></td>
+      <td><strong>Required</strong></td>
+      <td><code>String</code></td>
+      <td>The name of the new manufacture.</td>
+    </tr>
+    <tr>
+      <td><code>duns</code></td>
+      <td>Optional</td>
+      <td><code>String</code></td>
+      <td>
+        The <a target="_blank" rel="noopener noreferrer" href="http://en.wikipedia.org/wiki/Data_Universal_Numbering_System">DUNS</a> has to be in
+        the format <code>XX-XXX-XXXX</code>.
+      </td>
+    </tr>
+    <tr>
+      <td><code>business_unit_ids</code></td>
+      <td>Optional</td>
+      <td><code>Array</code></td>
+      <td>
+        Array of existing <a href="https://developer.riskmethods.net/v1/business_unit">business unit ids</a> that should be assigned to the created manufacture.
+      </td>
+    </tr>
+    <tr>
+      <td><code>material_group_ids</code></td>
+      <td>Optional</td>
+      <td><code>Array</code></td>
+      <td>
+        Array of existing <a href="https://developer.riskmethods.net/v1/material_group">material group ids</a> that should be assigned to the created manufacture.
+      </td>
+    </tr>
+    <tr>
+      <td><code>responsible_user_ids</code></td>
+      <td>Optional</td>
+      <td><code>Array</code></td>
+      <td>
+        Array of existing <a href="https://developer.riskmethods.net/v1/user">responsible user ids</a> that should be added to the manufacture.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">The following data needs to be inside the <code>manufacture.address</code> namespace.</th>
+    </tr>
+    <tr>
+      <td><code>address1</code></td>
+      <td><strong>Required</strong></td>
+      <td><code>String</code></td>
+      <td>The street including house number.</td>
+    </tr>
+    <tr>
+      <td><code>address2</code></td>
+      <td>Optional</td>
+      <td><code>String</code></td>
+      <td>Additional information on the address.</td>
+    </tr>
+    <tr>
+      <td><code>zip_code</code></td>
+      <td><strong>Required</strong></td>
+      <td><code>String</code></td>
+      <td>The city's zip code.</td>
+    </tr>
+    <tr>
+      <td><code>city</code></td>
+      <td><strong>Required</strong></td>
+      <td><code>String</code></td>
+      <td>The city name.</td>
+    </tr>
+    <tr>
+      <td><code>state</code></td>
+      <td>Optional</td>
+      <td><code>String</code></td>
+      <td>The state name.</td>
+    </tr>
+    <tr>
+      <td><code>country_code</code></td>
+      <td><strong>Required</strong></td>
+      <td><code>String</code></td>
+      <td>
+        The country's code in
+        <a target="_blank" rel="noopener noreferrer" href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha 2 format</a>.
+      </td>
+    </tr>
+  </tbody></table>
+
+  <h3>Response</h3>
+
+  <p>See <a href="https://developer.riskmethods.net/v1/response_codes">response codes</a> for what codes will be responded with.</p>
+
+  <h3>Example</h3>
+
+  <div class="well">
+  <div class="code request">
+    POST /v1/manufactures.json
+
+  <pre class="data">  {
+    "manufacture": {
+      "name": "New Manufacture",
+      "business_unit_ids": [6643],
+      "material_group_ids": [21619],
+      "responsible_user_ids": [%= data.user_id %&gt;],
+      "address": {
+        "address1": "Orleansstraße 4",
+        "city": "München",
+        "zip_code": "81669",
+        "country_code": "de"
+      }
+    }
+  }
+  </pre>
+
+  </div>
+</div>
+</section>
+
+<section id="update">
+  <h2>
+    Update a manufacture - PUT /v1/manufactures/:id
+  </h2>
+
+  <p>Updates the manufacture. The following information can be updated:</p>
+
+  <table class="table table-striped">
+    <tbody><tr>
+      <th>Attribute</th>
+      <th>Format</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <th colspan="3">The following data needs to be inside <code>manufacture</code> namespace.</th>
+    </tr>
+    <tr>
+      <td><code>name</code></td>
+      <td><code>String</code></td>
+      <td>The manufacture name.</td>
+    </tr>
+    <tr>
+      <td><code>duns</code></td>
+      <td><code>string</code></td>
+      <td>
+        The manufacture's <a target="_blank" rel="noopener noreferrer" href="http://en.wikipedia.org/wiki/Data_Universal_Numbering_System">DUNS</a> in
+        the format <code>XX-XXX-XXXX</code>.
+      </td>
+    </tr>
+    <tr>
+      <td><code>business_unit_ids</code></td>
+      <td><code>Array</code></td>
+      <td>
+        Array of existing <a href="https://developer.riskmethods.net/v1/business_unit">business unit ids</a> that should be added to the manufacture.
+      </td>
+    </tr>
+    <tr>
+      <td><code>material_group_ids</code></td>
+      <td><code>Array</code></td>
+      <td>
+        Array of existing <a href="https://developer.riskmethods.net/v1/material_group">material group ids</a> that should be added to the manufacture.
+      </td>
+    </tr>
+    <tr>
+      <td><code>responsible_user_ids</code></td>
+      <td><code>Array</code></td>
+      <td>
+        Array of existing <a href="https://developer.riskmethods.net/v1/user">responsible user ids</a> that should be added to the manufacture.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="3">The following data needs to be inside <code>manufacture.address</code> namespace.</th>
+    </tr>
+    <tr>
+      <td><code>address1</code></td>
+      <td><code>String</code></td>
+      <td>The street including house number.</td>
+    </tr>
+    <tr>
+      <td><code>address2</code></td>
+      <td><code>String</code></td>
+      <td>Additional information on the address.</td>
+    </tr>
+    <tr>
+      <td><code>zip_code</code></td>
+      <td><code>String</code></td>
+      <td>The city's zip code.</td>
+    </tr>
+    <tr>
+      <td><code>city</code></td>
+      <td><code>String</code></td>
+      <td>The city name.</td>
+    </tr>
+    <tr>
+      <td><code>state</code></td>
+      <td><code>String</code></td>
+      <td>The state name.</td>
+    </tr>
+    <tr>
+      <td><code>country_code</code></td>
+      <td><code>String</code></td>
+      <td>
+        The country's code in
+        <a target="_blank" rel="noopener noreferrer" href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha 2 format</a>.
+      </td>
+    </tr>
+  </tbody></table>
+
+  <h3>Response</h3>
+
+  <p>See <a href="https://developer.riskmethods.net/v1/response_codes">response codes</a> for what codes will be responded with.</p>
+
+  <h3>Example</h3>
+
+  <p>Update the name of a manufacture.</p>
+
+  <div class="well">
+  <div class="code request">
+    PUT /v1/manufactures/322038.json
+
+  <pre class="data">  {
+    "manufacture": {
+      "name": "New manufacture name"
+    }
+  }
+  </pre>
+
+  </div>
+</div>
+</section>
+
+<section id="destroy">
+  <h2>
+    Delete a manufacture - DELETE /v1/manufactures/:id
+  </h2>
+
+  <p>Deletes a manufacture, the one provided by the id parameter.</p>
+
+  <h3>Response</h3>
+
+  <p>See <a href="https://developer.riskmethods.net/v1/response_codes">response codes</a> for what codes will be responded with.</p>
+
+  <h3>Example</h3>
+
+  <div class="well">
+  <div class="code request">
+    DELETE /v1/manufactures/322038.json
+
+  </div>
+</div>
+
+</section>
+
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./Sphera SCRM API Documentation_files/api-77c4ff0fb23c495c62d313552030d03cdb47d26db2ebe374554f27ad848a1754.js.download" nonce=""></script>
+  
+
+</body></html>
